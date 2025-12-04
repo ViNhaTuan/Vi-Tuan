@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -16,9 +16,9 @@
     <style>
         /* --- CSS RESET & VARIABLES --- */
         :root {
-            --primary-color: #0d2c54; /* Xanh Navy đậm */
-            --secondary-color: #2a6f97; /* Xanh vừa */
-            --accent-color: #e0a800; /* Vàng Gold */
+            --primary-color: #0d2c54;
+            --secondary-color: #2a6f97;
+            --accent-color: #e0a800;
             --bg-light: #f8f9fa;
             --text-dark: #333;
             --text-light: #666;
@@ -49,9 +49,9 @@
             padding: 0 20px;
         }
 
-        /* --- HEADER / HERO SECTION --- */
+        /* --- HEADER --- */
         header {
-            background: linear-gradient(rgba(13, 44, 84, 0.9), rgba(13, 44, 84, 0.8)), url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); /* Ảnh nền tượng trưng phòng Lab */
+            background: linear-gradient(rgba(13, 44, 84, 0.9), rgba(13, 44, 84, 0.8)), url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             color: var(--white);
@@ -79,13 +79,13 @@
             margin-right: 8px;
             color: var(--accent-color);
         }
-        
+
         .contact-header span {
             margin: 0 15px;
             display: inline-block;
         }
 
-        /* --- SECTIONS GENERAL --- */
+        /* SECTIONS GENERAL */
         section {
             padding: 60px 0;
         }
@@ -117,7 +117,7 @@
             z-index: 1;
         }
 
-        /* --- INFO CARDS --- */
+        /* INFO CARDS */
         .personal-info {
             background: var(--white);
             padding: 40px;
@@ -157,7 +157,7 @@
             font-weight: 500;
         }
 
-        /* --- TIMELINE (Education & Work) --- */
+        /* TIMELINE */
         .timeline-section {
             background-color: var(--white);
         }
@@ -220,7 +220,7 @@
             margin-bottom: 10px;
         }
 
-        /* --- PUBLICATIONS --- */
+        /* PUBLICATIONS */
         .publication-card {
             background: var(--white);
             border-left: 5px solid var(--primary-color);
@@ -244,34 +244,7 @@
             top: 10px;
         }
 
-        .publication-card h4 {
-            margin-bottom: 10px;
-            padding-right: 40px;
-            color: var(--primary-color);
-        }
-
-        .publication-card .journal {
-            color: var(--text-light);
-            font-style: italic;
-        }
-
-        /* --- SKILLS / LANGUAGES --- */
-        .skills-container {
-            text-align: center;
-            background: var(--white);
-            padding: 40px;
-            border-radius: 10px;
-        }
-        .skill-badge {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 10px 25px;
-            border-radius: 30px;
-            font-weight: bold;
-        }
-
-        /* --- FOOTER --- */
+        /* FOOTER */
         footer {
             background: var(--primary-color);
             color: var(--white);
@@ -279,9 +252,9 @@
             padding: 40px 0;
             margin-top: 60px;
         }
-        
+
         footer p {
-            opacity: 0.7;
+            opacity: 0.8;
             font-size: 0.9rem;
         }
     </style>
@@ -301,12 +274,13 @@
         </div>
     </header>
 
-    <!-- ABOUT ME -->
+    <!-- ABOUT -->
     <section id="about">
         <div class="container">
             <div class="section-title">
                 <h2>Thông Tin Cá Nhân</h2>
             </div>
+
             <div class="personal-info">
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-calendar-alt"></i></div>
@@ -315,6 +289,7 @@
                         <p>11/11/1992</p>
                     </div>
                 </div>
+
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-map"></i></div>
                     <div class="info-content">
@@ -322,13 +297,15 @@
                         <p>Tân An, Cần Thơ</p>
                     </div>
                 </div>
+
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-user-graduate"></i></div>
                     <div class="info-content">
-                        <h4>Học vị cao nhất</h4>
+                        <h4>Học vị</h4>
                         <p>Thạc sĩ (2017)</p>
                     </div>
                 </div>
+
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-briefcase"></i></div>
                     <div class="info-content">
@@ -336,6 +313,7 @@
                         <p>Đại học Kỹ thuật - Công nghệ Cần Thơ</p>
                     </div>
                 </div>
+
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-home"></i></div>
                     <div class="info-content">
@@ -343,30 +321,31 @@
                         <p>158/25 Nguyễn Việt Hồng, Ninh Kiều, Cần Thơ</p>
                     </div>
                 </div>
+
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-language"></i></div>
                     <div class="info-content">
                         <h4>Ngoại ngữ</h4>
-                        <p>Tiếng Anh (B2 - Thành thạo)</p>
+                        <p>Tiếng Anh (B2)</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TIMELINE SECTION -->
+    <!-- TIMELINE -->
     <section id="resume" class="timeline-section">
         <div class="container">
             <div class="timeline-grid">
-                
-                <!-- Đào tạo -->
+
+                <!-- Education -->
                 <div class="timeline-column">
                     <h3><i class="fas fa-graduation-cap"></i> Quá Trình Đào Tạo</h3>
-                    
+
                     <div class="timeline-item">
                         <div class="time-period">2014 - 2017</div>
                         <h4>Thạc sĩ Công nghệ Thực phẩm</h4>
-                        <div class="place">Đại học Bách Khoa - ĐHQG TP.HCM</div>
+                        <div class="place">ĐH Bách Khoa - ĐHQG TP.HCM</div>
                     </div>
 
                     <div class="timeline-item">
@@ -377,10 +356,10 @@
                     </div>
                 </div>
 
-                <!-- Công tác -->
+                <!-- Work -->
                 <div class="timeline-column">
                     <h3><i class="fas fa-briefcase"></i> Quá Trình Công Tác</h3>
-                    
+
                     <div class="timeline-item">
                         <div class="time-period">10/2025 - Nay</div>
                         <h4>Giảng viên kiêm Trợ lý Khoa</h4>
@@ -389,8 +368,8 @@
 
                     <div class="timeline-item">
                         <div class="time-period">07/2016 - 07/2024</div>
-                        <h4>Nhân viên Kiểm soát chất lượng (QA/QC)</h4>
-                        <div class="place">Công ty CP Bia - Nước giải khát Sài Gòn Tây Đô</div>
+                        <h4>Nhân viên QA/QC</h4>
+                        <div class="place">Công ty CP Bia - NGK Sài Gòn Tây Đô</div>
                         <p>Phòng Lab</p>
                     </div>
                 </div>
@@ -399,7 +378,7 @@
         </div>
     </section>
 
-    <!-- PUBLICATIONS -->
+    <!-- RESEARCH -->
     <section id="research">
         <div class="container">
             <div class="section-title">
@@ -408,20 +387,20 @@
 
             <div class="publication-card">
                 <div class="pub-year">2025</div>
-                <h4>Ảnh hưởng của điều kiện lên men đến tính chất hóa lý của sản phẩm nước giải khát lên men từ vỏ dưa hấu</h4>
-                <div class="journal">Hội thảo Khoa học: An toàn thực phẩm và An ninh lương thực lần thứ 9</div>
+                <h4>Ảnh hưởng của điều kiện lên men đến tính chất hóa lý của nước giải khát lên men từ vỏ dưa hấu</h4>
+                <div class="journal">Hội thảo Khoa học ATTP & ANLT lần 9</div>
             </div>
 
             <div class="publication-card">
                 <div class="pub-year">2017</div>
-                <h4>Purification of gamma-amino butyric acid (GABA) from fermentation of defatted rice bran extract by using ion exchange resin</h4>
+                <h4>Purification of GABA from fermentation of defatted rice bran extract</h4>
                 <div class="journal">AIP Conference Proceedings</div>
             </div>
 
             <div class="publication-card">
                 <div class="pub-year">2015</div>
-                <h4>Nghiên cứu khả năng thủy phân dịch protein của thịt đầu tôm sú bằng enzyme protease nội tại</h4>
-                <div class="journal">Tạp chí Khoa học Đại học Cần Thơ</div>
+                <h4>Nghiên cứu thủy phân dịch protein thịt đầu tôm sú bằng enzyme nội tại</h4>
+                <div class="journal">Tạp chí KH Đại học Cần Thơ</div>
             </div>
 
         </div>
@@ -432,7 +411,17 @@
         <div class="container">
             <h3>ThS. Vi Nhã Tuấn</h3>
             <p>Khoa Công nghệ Sinh Hóa - Thực phẩm, Trường Đại học Kỹ thuật - Công nghệ Cần Thơ</p>
-            <p style="margin-top: 10px;">&copy; 2025 Profile Cá nhân. All rights reserved.</p>
+
+            <p style="margin-top: 15px;">
+                <a href="https://vinhatuan.github.io/Vi-Tuan/" style="color:#fff;text-decoration:underline;">Website</a>
+                © 2025 by 
+                <a href="https://example.com" style="color:#fff;text-decoration:underline;">Tuan Vi</a> 
+                is licensed under 
+                <a href="https://creativecommons.org/licenses/by-nd/4.0/" style="color:#fff;text-decoration:underline;">CC BY-ND 4.0</a>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width:1em;max-height:1em;margin-left:.2em;">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width:1em;max-height:1em;margin-left:.2em;">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="max-width:1em;max-height:1em;margin-left:.2em;">
+            </p>
         </div>
     </footer>
 
